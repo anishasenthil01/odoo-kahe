@@ -1,0 +1,13 @@
+{
+  "name": "traveloop",
+  "version": "1.0.0",
+  "description": "Traveloop Root Application",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "install-all": "npm install --prefix backend && npm install --prefix frontend",
+    "init-db": "npm run init-db --prefix backend"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
